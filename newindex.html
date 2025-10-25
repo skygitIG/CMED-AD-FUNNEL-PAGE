@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -137,45 +136,19 @@
         <div class="container">
             <div class="benefits-content">
                 
-                <div class="benefits-slider">
-        <div class="slides-wrapper">
-          <div class="slide">
-            <div class="benefits-text">
-              <h2>Major <span>Benefits</span> of EBO2</h2>
-              <ol>
-                <li>BENEFIT</li>
-              </ol>
-              <h3>Reduces Inflammation</h3>
-              <ul class="benefits-lista">
-                <li>Stimulates pathways that decrease systemic Inflammation</li>
-                <li>You'll actually SEE Inflammation leaving your body as foam in the waste container</li>
-                <li>Perfect for autoimmune conditions</li>
-              </ul>
-              <button class="cta-button">Schedule a Consult</button>
-            </div>
-          </div>
-
-          <div class="slide">
-            <div class="benefits-text">
-              <h2>Major <span>Benefits</span> of EBO2</h2>
-              <ol>
-                <li>BENEFIT</li>
-              </ol>
-              <h3>Boosts Oxygenation</h3>
-              <ul class="benefits-lista">
-                <li>Improves oxygen flow to tissues</li>
-                <li>Enhances cellular metabolism</li>
-                <li>Supports overall energy levels</li>
-              </ul>
-              <button class="cta-button">Schedule a Consult</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Navigation Arrows -->
-        <button class="nav-arrow prev" aria-label="Previous Slide"><img src="images/logos/arrow-left.svg" alt=""></button>
-        <button class="nav-arrow next" aria-label="Next Slide"><img src="images/logos/arrow-right.svg" alt=""></button>
-      </div>
+                <div class="benefits-text">
+                    <h2>Major <span>Benefits</span> of EBO2</h2>
+                    <ol>
+                        <li>BENEFIT</li>
+                    </ol>
+                    <h3>Reduces Inflammation</h3>
+                    <ul class="benefits-lista">
+                       <li style="list-style: disc;">Stimulates pathways that decrease systemic Inflammation</li>
+                       <li style="list-style: disc;">You'll actually SEE Inflammation leaving your body as foam in the waste container</li>
+                       <li style="list-style: disc;">Perfect for autoimmune conditions</li>
+                    </ul>
+                    
+                </div>
             </div>
         </div>
     </section>
@@ -250,46 +223,68 @@
   </section>
 
     <!-- Limited Availability Section -->
-    <section class="contact-section">
-    <div class="stripe"></div>
-
-    <div class="inner">
-      <div class="left">
-        <div class="icon-wrap" aria-hidden="true">
-          <!-- replace with your inline SVG or image -->
-          <svg width="60" height="60" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="12" cy="8" r="5" stroke="#1f2937" stroke-width="1.5" fill="white"/>
-            <path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="#1f2937" stroke-width="1.5" fill="none"/>
-          </svg>
-        </div>
-
-        <p class="badge">LIMITED AVAILABILITY -</p>
-        <h1 class="title">Book Your Session Today</h1>
-        <p class="desc">
-          Experience the revolutionary power of EB02 and see the difference in your health with Conscious Medicine.
-          Fill out this form and connect with us.
-        </p>
-      </div>
-
-      <div class="right-card">
-        <div class="card-inner">
-          <h3 class="form-heading">Get In Touch With Us</h3>
-
-          <form class="contact-form" action="#" method="post" novalidate>
-            <div class="row">
-              <input type="text" name="fname" placeholder="First Name" required>
-              <input type="text" name="lname" placeholder="Last Name" required>
+    <!-- <section class="limited-section">
+        <div class="container">
+            <div class="limited-content">
+                <div class="limited-text-section">
+                    <div class="limited-icon"></div>
+                    <div class="limited-text">
+                        <h2>LIMITED AVAILABILITY -</h2>
+                        <h3>Book Your Session Today</h3>
+                        <p>Experience the revolutionary power of EBO2 and see the difference for your health with Conscious Medicine. Sessions are limited – secure your spot today!</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Get In Touch With Us</h3>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="First Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Last Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
             </div>
-
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="tel" name="phone" placeholder="Phone" required>
-
-            <div class="btn-row">
-              <button type="submit" class="btn">Submit</button>
-            </div>
-          </form>
         </div>
-      </div>
+    </section> -->
+
+
+        <section class="footer-form">
+    <div class="left-section">
+      <h2>LIMITED AVAILABILITY -</h2>
+      <h1>Book Your Session Today</h1>
+      <p>Experience the revolutionary power of EBO2 and see the difference in your health with Conscious Medicine. Fill out this form and connect with us.</p>
+    </div>
+    <div class="right-section">
+      <h2>Get In Touch With Us</h2>
+      <form action="#" method="POST">
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Submit</button>
+      </form>
     </div>
   </section>
 
@@ -326,29 +321,6 @@
                 </div>
 
     
-    <!-- slider navigation script -->
-
-    <script>
-    const slidesWrapper = document.querySelector('.slides-wrapper');
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.nav-arrow.prev');
-const nextBtn = document.querySelector('.nav-arrow.next');
-let currentIndex = 0;
-const totalSlides = slides.length;
-
-function updateSlidePosition() {
-  slidesWrapper.style.transform = `translateX(-${currentIndex * 100}%)`;
-}
-
-prevBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex === 0) ? totalSlides - 1 : currentIndex - 1;
-  updateSlidePosition();
-});
-
-nextBtn.addEventListener('click', () => {
-  currentIndex = (currentIndex === totalSlides - 1) ? 0 : currentIndex + 1;
-  updateSlidePosition();
-});
-</script>
+    <script src="script.js"></script>
 </body>
 </html>
